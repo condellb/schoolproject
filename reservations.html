@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- Author: Brenda Condelles
+Date: March 20, 2023
+File Name: reservations.html -->
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <!-- Adjust for individaul page SEO -->
+    <title>Reservations - Portland Historical Tours | Portland City Tours</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Adjust for individaul page SEO. Keep under 160 characters -->
+    <meta name="description" content="Make a reservation with Portland Historical Tours, a tour company in Portland, Oregon, offers tours of Historical Downtown Portland, Albina area, and a Landmarks Tour.">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <!-- Skip to Content Link -->
+    <a class="skip" href="#content">Skip to Content</a>
+
+    <div id="container">
+
+        <!-- Use the header area for the website name or logo -->
+        <header>
+            <a href="index.html"><img src="images/logo_xtrsmall.png" alt="Portland Historical Tours logo"></a>
+        </header>
+
+        <!-- Use the nav area to add hyperlinks to other pages within the website -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="downtown.html">Downtown</a></li>
+                <li><a href="albina.html">Albina</a></li>
+                <li><a href="landmarks.html">Landmarks</a></li>
+                <li><a href="reservations.html" class="reservationslink">Reservations</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mt Hood Image -->
+        <div id="mthood" class="tablet-desktop">
+            <img src="images/portland_historical_tours.jpg" alt="city of Portland with Mt Hood in the background">
+        </div>
+
+        <!-- Use the main area to add the main content of the webpage -->
+        <main id="content">
+
+            <div id="form">
+                
+                <h2>Complete the form below to make your reservation.</h2>
+            
+                <form class="form-grid" action="https://pcc-webdev.com/cis195h/pht/formInfo.php" method="post"><!-- Start Form -->
+                    
+                    <fieldset>
+                        <legend>Choose your Tour</legend>
+                        <label for="tours">Please select from the list.</label>
+                        <select name="tours" id="tours">
+                            <option value="downtown">Downtown Tour</option>
+                            <option value="albina">Albina Area Tour</option>
+                            <option value="landmarks">Landmarks Tour</option>
+                        </select>
+                        
+                        <label for="day">What day would you like to tour?</label>
+                        <textarea id="day" name="day" rows="2" cols="35"></textarea>
+                        
+                        <label for="participants">Total Participants</label>
+                        <select name="participants" id="participants">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        
+                        <label for="partynum">For parties greater than 5, please specify the number.</label>
+                        <textarea id="partynum" name="partynum" rows="2" cols="35"></textarea>
+                        
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" id="fName" name="fName" required>
+                        
+                        <label for="lName">Last Name:</label>
+                        <input type="text" name="lName" id="lName" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                        
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        <p>Does anyone in your party have food or drink sensitivities?</p>
+                        
+                        <label for="questions">If so, what are they?</label>
+                        <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+                    </fieldset>
+                    
+                    <input type="image" src="images/button.jpg" alt="Submit" width="80" height="40" class="btn">
+                    
+                </form><!-- End Form -->
+            
+            </div>
+
+
+        </main>
+
+        <!-- Use the footer area to add webpage footer content -->
+        <footer>
+            
+            <div class="copyright">
+                <p>&copy; Copyright 2023. All Rights Reserved.</p>
+
+                <p><a href="mailto:sales@portlandhistoricaltours.com">sales@portlandhistoricaltours.com</a></p>
+            </div>
+            
+            <!-- Add in if social media accouts are created - No accounts at this time: 
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-logo.png" alt="black and white Facebook logo"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="images/twitter-logo.png" alt="black and white Twitter logo"></a>
+            </div>-->
+            
+        </footer>
+
+    </div>
+
+</body>
+    
+</html>
